@@ -1,24 +1,32 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* 環境
+ruby 2.3.0
+rails 5.0.0
+mysql 5.7
+redis 3.2
+nginx 1.11.10
 
-Things you may want to cover:
+* docker
+rails
+mysql
+redis
+nginx
 
-* Ruby version
+```
+$ git clone https://github.com/ikotan/rails5app-angular2-template.git
+$ cd rails5api-angular2-template/
+```
 
-* System dependencies
+```
+$ docker-compose build
+$ docker-compose up
+$ docker-compose exec rails rails db:create
+```
 
-* Configuration
+```
+$ front/
+$ npm install
+$ npm start
+```
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
