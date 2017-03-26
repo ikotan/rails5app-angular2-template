@@ -21,3 +21,9 @@ services:
     depends_on:
       - mysql
       - redis
+  nginx:
+    build: docker/nginx
+    ports:
+      - "80:80"
+    depends_on:
+      - rails
